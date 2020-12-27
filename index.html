@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="columns mb-0">
+        <div class="column"></div>
+        <div class="column is-6">
+            <div id="container">
+                <div class="image is-5by3">
+                    <img class="has-ratio"
+                        src="https://images.unsplash.com/photo-1564518440696-ef272968778e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
+                    <!-- <img src="https://images.unsplash.com/photo-1500889558224-93c3351324e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1638&q=80" alt=""> -->
+                </div>
+                <div id="heading">
+                    <h3 class="title is-3 level-item">Ping Pong Score Keeper</h3>
+                </div>
+
+                <div id="score" class="content level-content">
+                    <div class="level-item">
+                        <h3 class="title is-3">
+                            <span id="p1Display">0</span>
+                            <span> to </span>
+                            <span id="p2Display">0</span>
+                        </h3>
+                    </div>
+                    <p class="level-item">Use the buttons below to keep score...</p>
+                    <div class="level-item" id='maxScoreDiv'>
+                        <!-- <h5 class="title is-5 is-inline-block mb*-0">Playing To -->
+                        <label for="playto" class="label is-inline">Playing to </label>
+                        <!-- <span> -->
+                        <div class="select is-rounded ml-3 is-small">
+                            <select id='playto'>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        </div>
+                        <!-- </span> -->
+                        <!-- </h5> -->
+                    </div>
+
+                </div>
+
+
+                <div class="is-justify-content-space-around buttons">
+                    <button class="button is-info is-rounded" id="btnPlyr1">+1 Player1</button>
+                    <button class="button is-success is-rounded" id="btnPlyr2">+1 Player2</button>
+                    <button class="button is-danger is-rounded" id="btnRst">Reset</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>
